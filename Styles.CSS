@@ -1,0 +1,75 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #dda0dd; /* Purple background */
+    color: #000; /* Black text color for better contrast */
+}
+
+.container {
+    text-align: center;
+    background-color: #ffe6e6; /* Lighter pink for container background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#playerSelection {
+    margin-bottom: 20px;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.cell {
+    background-color: #fff; /* White color for the cells */
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    height: 100px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #f0f0f0; /* Lighter grey for hover effect */
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #000; /* Black color for reset button */
+    color: #fff; /* White text color */
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #333; /* Darker grey for hover effect */
+}
+
+@media (max-width: 400px) {
+    .cell {
+        height: 80px;
+        font-size: 1.5em;
+    }
+}
